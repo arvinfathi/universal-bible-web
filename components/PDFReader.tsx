@@ -56,9 +56,8 @@ const PDFReader: React.FC<PDFReaderProps> = ({ filename, selectedLang, selectedV
   };
 
   // Build the correct URL for the PDF
-  // The filename from our index is like "EN-English/kjv.pdf"
-  // We mapped assets to public/bibles, so the URL is /bibles/${filename}
-  const pdfUrl = `/bibles/${filename}`;
+  // Use the local proxy to avoid CORS issues with GitHub Releases
+  const pdfUrl = `/api/pdf?url=${encodeURIComponent(filename)}`;
 
   return (
     <div className="flex flex-col h-full bg-slate-100">

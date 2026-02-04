@@ -22,7 +22,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "afri",
         "name": "AFRI",
         "abbreviation": "AFRI",
-        "filename": "AF-Afrikaans/afri.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/AF-Afrikaans_afri.pdf"
       }
     ]
   },
@@ -35,7 +35,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "albanian",
         "name": "ALBANIAN",
         "abbreviation": "ALBANI",
-        "filename": "SQ-Albanian/albanian.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/SQ-Albanian_albanian.pdf"
       }
     ]
   },
@@ -48,7 +48,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "am_amh",
         "name": "AM_AMH",
         "abbreviation": "AM_AMH",
-        "filename": "AM-Amharic/am_amh.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/AM-Amharic_am_amh.pdf"
       }
     ]
   },
@@ -61,7 +61,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "svd",
         "name": "SVD",
         "abbreviation": "SVD",
-        "filename": "AR-Arabic/svd.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/AR-Arabic_svd.pdf"
       }
     ]
   },
@@ -74,7 +74,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "bn_irv",
         "name": "BN_IRV",
         "abbreviation": "BN_IRV",
-        "filename": "BN-Bengali/bn_irv.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/BN-Bengali_bn_irv.pdf"
       }
     ]
   },
@@ -87,7 +87,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "my_judson",
         "name": "MY_JUDSON",
         "abbreviation": "MY_JUD",
-        "filename": "MY-Burmese/my_judson.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/MY-Burmese_my_judson.pdf"
       }
     ]
   },
@@ -100,37 +100,37 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "chinese_union_simp",
         "name": "CHINESE_UNION_SIMP",
         "abbreviation": "CHINES",
-        "filename": "ZH-Chinese/chinese_union_simp.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/ZH-Chinese_chinese_union_simp.pdf"
       },
       {
         "id": "chinese_union_simp_s",
         "name": "CHINESE_UNION_SIMP_S",
         "abbreviation": "CHINES",
-        "filename": "ZH-Chinese/chinese_union_simp_s.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/ZH-Chinese_chinese_union_simp_s.pdf"
       },
       {
         "id": "chinese_union_trad",
         "name": "CHINESE_UNION_TRAD",
         "abbreviation": "CHINES",
-        "filename": "ZH-Chinese/chinese_union_trad.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/ZH-Chinese_chinese_union_trad.pdf"
       },
       {
         "id": "chinese_union_trad_s",
         "name": "CHINESE_UNION_TRAD_S",
         "abbreviation": "CHINES",
-        "filename": "ZH-Chinese/chinese_union_trad_s.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/ZH-Chinese_chinese_union_trad_s.pdf"
       },
       {
         "id": "ckjv_sds",
         "name": "CKJV_SDS",
         "abbreviation": "CKJV_S",
-        "filename": "ZH-Chinese/ckjv_sds.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/ZH-Chinese_ckjv_sds.pdf"
       },
       {
         "id": "ckjv_sdt",
         "name": "CKJV_SDT",
         "abbreviation": "CKJV_S",
-        "filename": "ZH-Chinese/ckjv_sdt.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/ZH-Chinese_ckjv_sdt.pdf"
       }
     ]
   },
@@ -143,7 +143,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "bkr",
         "name": "BKR",
         "abbreviation": "BKR",
-        "filename": "CS-Czech/bkr.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/CS-Czech_bkr.pdf"
       }
     ]
   },
@@ -156,7 +156,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "stve",
         "name": "STVE",
         "abbreviation": "STVE",
-        "filename": "NL-Dutch/stve.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/NL-Dutch_stve.pdf"
       }
     ]
   },
@@ -169,61 +169,61 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "asv",
         "name": "American Standard Version",
         "abbreviation": "ASV",
-        "filename": "EN-English/asv.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/EN-English_asv.pdf"
       },
       {
         "id": "asvs",
         "name": "American Standard Version (Strongs)",
         "abbreviation": "ASVS",
-        "filename": "EN-English/asvs.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/EN-English_asvs.pdf"
       },
       {
         "id": "bishops",
         "name": "Bishops Bible",
         "abbreviation": "BISHOP",
-        "filename": "EN-English/bishops.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/EN-English_bishops.pdf"
       },
       {
         "id": "coverdale",
         "name": "Coverdale Bible",
         "abbreviation": "COVERD",
-        "filename": "EN-English/coverdale.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/EN-English_coverdale.pdf"
       },
       {
         "id": "geneva",
         "name": "Geneva Bible",
         "abbreviation": "GENEVA",
-        "filename": "EN-English/geneva.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/EN-English_geneva.pdf"
       },
       {
         "id": "kjv",
         "name": "King James Version",
         "abbreviation": "KJV",
-        "filename": "EN-English/kjv.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/EN-English_kjv.pdf"
       },
       {
         "id": "kjv_strongs",
         "name": "King James Version (Strongs)",
         "abbreviation": "KJV_ST",
-        "filename": "EN-English/kjv_strongs.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/EN-English_kjv_strongs.pdf"
       },
       {
         "id": "net",
         "name": "New English Translation",
         "abbreviation": "NET",
-        "filename": "EN-English/net.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/EN-English_net.pdf"
       },
       {
         "id": "tyndale",
         "name": "Tyndale Bible",
         "abbreviation": "TYNDAL",
-        "filename": "EN-English/tyndale.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/EN-English_tyndale.pdf"
       },
       {
         "id": "web",
         "name": "World English Bible",
         "abbreviation": "WEB",
-        "filename": "EN-English/web.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/EN-English_web.pdf"
       }
     ]
   },
@@ -236,7 +236,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "finn",
         "name": "FINN",
         "abbreviation": "FINN",
-        "filename": "FI-Finnish/finn.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/FI-Finnish_finn.pdf"
       }
     ]
   },
@@ -249,25 +249,25 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "epee",
         "name": "EPEE",
         "abbreviation": "EPEE",
-        "filename": "FR-French/epee.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/FR-French_epee.pdf"
       },
       {
         "id": "martin",
         "name": "MARTIN",
         "abbreviation": "MARTIN",
-        "filename": "FR-French/martin.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/FR-French_martin.pdf"
       },
       {
         "id": "oster",
         "name": "OSTER",
         "abbreviation": "OSTER",
-        "filename": "FR-French/oster.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/FR-French_oster.pdf"
       },
       {
         "id": "segond_1910",
         "name": "SEGOND_1910",
         "abbreviation": "SEGOND",
-        "filename": "FR-French/segond_1910.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/FR-French_segond_1910.pdf"
       }
     ]
   },
@@ -280,31 +280,31 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "elberfelder_1871",
         "name": "ELBERFELDER_1871",
         "abbreviation": "ELBERF",
-        "filename": "DE-German/elberfelder_1871.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/DE-German_elberfelder_1871.pdf"
       },
       {
         "id": "elberfelder_1905",
         "name": "ELBERFELDER_1905",
         "abbreviation": "ELBERF",
-        "filename": "DE-German/elberfelder_1905.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/DE-German_elberfelder_1905.pdf"
       },
       {
         "id": "luther",
         "name": "LUTHER",
         "abbreviation": "LUTHER",
-        "filename": "DE-German/luther.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/DE-German_luther.pdf"
       },
       {
         "id": "luther_1912",
         "name": "LUTHER_1912",
         "abbreviation": "LUTHER",
-        "filename": "DE-German/luther_1912.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/DE-German_luther_1912.pdf"
       },
       {
         "id": "schlachter",
         "name": "SCHLACHTER",
         "abbreviation": "SCHLAC",
-        "filename": "DE-German/schlachter.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/DE-German_schlachter.pdf"
       }
     ]
   },
@@ -317,13 +317,13 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "tr",
         "name": "TR",
         "abbreviation": "TR",
-        "filename": "GRC-Greek/tr.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/GRC-Greek_tr.pdf"
       },
       {
         "id": "trparsed",
         "name": "TRPARSED",
         "abbreviation": "TRPARS",
-        "filename": "GRC-Greek/trparsed.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/GRC-Greek_trparsed.pdf"
       }
     ]
   },
@@ -336,7 +336,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "gu_irv",
         "name": "GU_IRV",
         "abbreviation": "GU_IRV",
-        "filename": "GU-Gujarati/gu_irv.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/GU-Gujarati_gu_irv.pdf"
       }
     ]
   },
@@ -349,7 +349,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "hcv",
         "name": "HCV",
         "abbreviation": "HCV",
-        "filename": "HT-Haitian,_Haitian_Creole/hcv.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/HT-Haitian_Haitian_Creole_hcv.pdf"
       }
     ]
   },
@@ -362,13 +362,13 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "ha_con",
         "name": "HA_CON",
         "abbreviation": "HA_CON",
-        "filename": "HA-Hausa/ha_con.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/HA-Hausa_ha_con.pdf"
       },
       {
         "id": "ha_lit",
         "name": "HA_LIT",
         "abbreviation": "HA_LIT",
-        "filename": "HA-Hausa/ha_lit.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/HA-Hausa_ha_lit.pdf"
       }
     ]
   },
@@ -381,13 +381,13 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "he_modern",
         "name": "HE_MODERN",
         "abbreviation": "HE_MOD",
-        "filename": "HE-Hebrew/he_modern.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/HE-Hebrew_he_modern.pdf"
       },
       {
         "id": "wlc",
         "name": "WLC",
         "abbreviation": "WLC",
-        "filename": "HE-Hebrew/wlc.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/HE-Hebrew_wlc.pdf"
       }
     ]
   },
@@ -400,7 +400,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "irv",
         "name": "IRV",
         "abbreviation": "IRV",
-        "filename": "HI-Hindi/irv.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/HI-Hindi_irv.pdf"
       }
     ]
   },
@@ -413,7 +413,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "karoli",
         "name": "KAROLI",
         "abbreviation": "KAROLI",
-        "filename": "HU-Hungarian/karoli.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/HU-Hungarian_karoli.pdf"
       }
     ]
   },
@@ -426,13 +426,13 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "indo_tb",
         "name": "INDO_TB",
         "abbreviation": "INDO_T",
-        "filename": "ID-Indonesian/indo_tb.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/ID-Indonesian_indo_tb.pdf"
       },
       {
         "id": "indo_tm",
         "name": "INDO_TM",
         "abbreviation": "INDO_T",
-        "filename": "ID-Indonesian/indo_tm.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/ID-Indonesian_indo_tm.pdf"
       }
     ]
   },
@@ -445,7 +445,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "diodati",
         "name": "DIODATI",
         "abbreviation": "DIODAT",
-        "filename": "IT-Italian/diodati.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/IT-Italian_diodati.pdf"
       }
     ]
   },
@@ -458,13 +458,13 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "bungo",
         "name": "BUNGO",
         "abbreviation": "BUNGO",
-        "filename": "JA-Japanese/bungo.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/JA-Japanese_bungo.pdf"
       },
       {
         "id": "kougo",
         "name": "KOUGO",
         "abbreviation": "KOUGO",
-        "filename": "JA-Japanese/kougo.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/JA-Japanese_kougo.pdf"
       }
     ]
   },
@@ -477,7 +477,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "jv_jvn",
         "name": "JV_JVN",
         "abbreviation": "JV_JVN",
-        "filename": "JV-Javanese/jv_jvn.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/JV-Javanese_jv_jvn.pdf"
       }
     ]
   },
@@ -490,13 +490,13 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "kn_irv",
         "name": "KN_IRV",
         "abbreviation": "KN_IRV",
-        "filename": "KN-Kannada/kn_irv.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/KN-Kannada_kn_irv.pdf"
       },
       {
         "id": "kn_kjv",
         "name": "KN_KJV",
         "abbreviation": "KN_KJV",
-        "filename": "KN-Kannada/kn_kjv.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/KN-Kannada_kn_kjv.pdf"
       }
     ]
   },
@@ -509,7 +509,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "korean",
         "name": "KOREAN",
         "abbreviation": "KOREAN",
-        "filename": "KO-Korean/korean.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/KO-Korean_korean.pdf"
       }
     ]
   },
@@ -522,7 +522,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "lv_gluck_8",
         "name": "LV_GLUCK_8",
         "abbreviation": "LV_GLU",
-        "filename": "LV-Latvian/lv_gluck_8.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/LV-Latvian_lv_gluck_8.pdf"
       }
     ]
   },
@@ -535,7 +535,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "lt_heritage",
         "name": "LT_HERITAGE",
         "abbreviation": "LT_HER",
-        "filename": "LT-Lithuanian/lt_heritage.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/LT-Lithuanian_lt_heritage.pdf"
       }
     ]
   },
@@ -548,7 +548,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "maori",
         "name": "MAORI",
         "abbreviation": "MAORI",
-        "filename": "MI-Maori/maori.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/MI-Maori_maori.pdf"
       }
     ]
   },
@@ -561,7 +561,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "mr_irv",
         "name": "MR_IRV",
         "abbreviation": "MR_IRV",
-        "filename": "MR-Marathi/mr_irv.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/MR-Marathi_mr_irv.pdf"
       }
     ]
   },
@@ -574,7 +574,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "ne_ulb",
         "name": "NE_ULB",
         "abbreviation": "NE_ULB",
-        "filename": "NE-Nepali/ne_ulb.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/NE-Nepali_ne_ulb.pdf"
       }
     ]
   },
@@ -587,7 +587,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "opt",
         "name": "OPT",
         "abbreviation": "OPT",
-        "filename": "FA-Persian/opt.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/FA-Persian_opt.pdf"
       }
     ]
   },
@@ -600,19 +600,19 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "pol_nbg",
         "name": "POL_NBG",
         "abbreviation": "POL_NB",
-        "filename": "PL-Polish/pol_nbg.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/PL-Polish_pol_nbg.pdf"
       },
       {
         "id": "pol_ubg",
         "name": "POL_UBG",
         "abbreviation": "POL_UB",
-        "filename": "PL-Polish/pol_ubg.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/PL-Polish_pol_ubg.pdf"
       },
       {
         "id": "polbg",
         "name": "POLBG",
         "abbreviation": "POLBG",
-        "filename": "PL-Polish/polbg.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/PL-Polish_polbg.pdf"
       }
     ]
   },
@@ -625,19 +625,19 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "almeida_ra",
         "name": "ALMEIDA_RA",
         "abbreviation": "ALMEID",
-        "filename": "PT-Portuguese/almeida_ra.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/PT-Portuguese_almeida_ra.pdf"
       },
       {
         "id": "almeida_rc",
         "name": "ALMEIDA_RC",
         "abbreviation": "ALMEID",
-        "filename": "PT-Portuguese/almeida_rc.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/PT-Portuguese_almeida_rc.pdf"
       },
       {
         "id": "blivre",
         "name": "BLIVRE",
         "abbreviation": "BLIVRE",
-        "filename": "PT-Portuguese/blivre.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/PT-Portuguese_blivre.pdf"
       }
     ]
   },
@@ -650,7 +650,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "pa_irv",
         "name": "PA_IRV",
         "abbreviation": "PA_IRV",
-        "filename": "PA-Punjabi_Panjabi/pa_irv.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/PA-Punjabi_Panjabi_pa_irv.pdf"
       }
     ]
   },
@@ -663,13 +663,13 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "cornilescu",
         "name": "CORNILESCU",
         "abbreviation": "CORNIL",
-        "filename": "RO-Romanian/cornilescu.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/RO-Romanian_cornilescu.pdf"
       },
       {
         "id": "fidela",
         "name": "FIDELA",
         "abbreviation": "FIDELA",
-        "filename": "RO-Romanian/fidela.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/RO-Romanian_fidela.pdf"
       }
     ]
   },
@@ -682,7 +682,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "synodal",
         "name": "SYNODAL",
         "abbreviation": "SYNODA",
-        "filename": "RU-Russian/synodal.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/RU-Russian_synodal.pdf"
       }
     ]
   },
@@ -695,7 +695,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "so_jimale",
         "name": "SO_JIMALE",
         "abbreviation": "SO_JIM",
-        "filename": "SO-Somali/so_jimale.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/SO-Somali_so_jimale.pdf"
       }
     ]
   },
@@ -708,37 +708,37 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "rv_1858",
         "name": "RV_1858",
         "abbreviation": "RV_185",
-        "filename": "ES-Spanish/rv_1858.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/ES-Spanish_rv_1858.pdf"
       },
       {
         "id": "rv_1909",
         "name": "RV_1909",
         "abbreviation": "RV_190",
-        "filename": "ES-Spanish/rv_1909.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/ES-Spanish_rv_1909.pdf"
       },
       {
         "id": "rv_1909_strongs",
         "name": "RV_1909_STRONGS",
         "abbreviation": "RV_190",
-        "filename": "ES-Spanish/rv_1909_strongs.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/ES-Spanish_rv_1909_strongs.pdf"
       },
       {
         "id": "rvg",
         "name": "RVG",
         "abbreviation": "RVG",
-        "filename": "ES-Spanish/rvg.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/ES-Spanish_rvg.pdf"
       },
       {
         "id": "rvg_2004",
         "name": "RVG_2004",
         "abbreviation": "RVG_20",
-        "filename": "ES-Spanish/rvg_2004.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/ES-Spanish_rvg_2004.pdf"
       },
       {
         "id": "sagradas",
         "name": "SAGRADAS",
         "abbreviation": "SAGRAD",
-        "filename": "ES-Spanish/sagradas.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/ES-Spanish_sagradas.pdf"
       }
     ]
   },
@@ -751,7 +751,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "swahili",
         "name": "SWAHILI",
         "abbreviation": "SWAHIL",
-        "filename": "SW-Swahili/swahili.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/SW-Swahili_swahili.pdf"
       }
     ]
   },
@@ -764,7 +764,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "tagab",
         "name": "TAGAB",
         "abbreviation": "TAGAB",
-        "filename": "TL-Tagalog/tagab.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/TL-Tagalog_tagab.pdf"
       }
     ]
   },
@@ -777,7 +777,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "tg_tgk",
         "name": "TG_TGK",
         "abbreviation": "TG_TGK",
-        "filename": "TG-Tajik/tg_tgk.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/TG-Tajik_tg_tgk.pdf"
       }
     ]
   },
@@ -790,13 +790,13 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "ta_irv",
         "name": "TA_IRV",
         "abbreviation": "TA_IRV",
-        "filename": "TA-Tamil/ta_irv.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/TA-Tamil_ta_irv.pdf"
       },
       {
         "id": "ta_oitce",
         "name": "TA_OITCE",
         "abbreviation": "TA_OIT",
-        "filename": "TA-Tamil/ta_oitce.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/TA-Tamil_ta_oitce.pdf"
       }
     ]
   },
@@ -809,7 +809,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "te_irv",
         "name": "TE_IRV",
         "abbreviation": "TE_IRV",
-        "filename": "TE-Telugu/te_irv.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/TE-Telugu_te_irv.pdf"
       }
     ]
   },
@@ -822,7 +822,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "thaikjv",
         "name": "THAIKJV",
         "abbreviation": "THAIKJ",
-        "filename": "TH-Thai/thaikjv.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/TH-Thai_thaikjv.pdf"
       }
     ]
   },
@@ -835,7 +835,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "bo_ntb",
         "name": "BO_NTB",
         "abbreviation": "BO_NTB",
-        "filename": "BO-Tibetan/bo_ntb.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/BO-Tibetan_bo_ntb.pdf"
       }
     ]
   },
@@ -848,7 +848,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "turkish",
         "name": "TURKISH",
         "abbreviation": "TURKIS",
-        "filename": "TR-Turkish/turkish.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/TR-Turkish_turkish.pdf"
       }
     ]
   },
@@ -861,7 +861,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "ug_ara",
         "name": "UG_ARA",
         "abbreviation": "UG_ARA",
-        "filename": "UG-Uighur,_Uyghur/ug_ara.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/UG-Uighur_Uyghur_ug_ara.pdf"
       }
     ]
   },
@@ -874,7 +874,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "ur_geo",
         "name": "UR_GEO",
         "abbreviation": "UR_GEO",
-        "filename": "UR-Urdu/ur_geo.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/UR-Urdu_ur_geo.pdf"
       }
     ]
   },
@@ -887,7 +887,7 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "cadman",
         "name": "CADMAN",
         "abbreviation": "CADMAN",
-        "filename": "VI-Vietnamese/cadman.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/VI-Vietnamese_cadman.pdf"
       }
     ]
   },
@@ -900,13 +900,13 @@ export const BIBLE_INDEX: BibleLanguage[] = [
         "id": "wo_kyg",
         "name": "WO_KYG",
         "abbreviation": "WO_KYG",
-        "filename": "WO-Wolof/wo_kyg.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/WO-Wolof_wo_kyg.pdf"
       },
       {
         "id": "wo_wol_nt_2010",
         "name": "WO_WOL_NT_2010",
         "abbreviation": "WO_WOL",
-        "filename": "WO-Wolof/wo_wol_nt_2010.pdf"
+        "filename": "https://github.com/arvinfathi/universal-bible-web/releases/download/v1.0-assets/WO-Wolof_wo_wol_nt_2010.pdf"
       }
     ]
   }

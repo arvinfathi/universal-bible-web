@@ -136,7 +136,7 @@ const App = () => {
               UniversalBible App &copy; {new Date().getFullYear()}
             </p>
             <p className="text-slate-400 text-xs mt-2">
-              Using Bible SuperSearch Data • No Database • Static Generation
+               Using Bible SuperSearch Data • Made with ❤️
             </p>
           </div>
         </footer>
