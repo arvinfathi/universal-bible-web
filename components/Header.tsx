@@ -9,6 +9,7 @@ interface HeaderProps {
   isSidebarOpen: boolean;
   setSidebarOpen: (isOpen: boolean) => void;
   resetHome: () => void;
+  goToAbout: () => void;
 }
 
 const Header: React.FC<HeaderProps> = ({ 
@@ -16,7 +17,8 @@ const Header: React.FC<HeaderProps> = ({
   setSearchQuery, 
   isSidebarOpen, 
   setSidebarOpen, 
-  resetHome 
+  resetHome,
+  goToAbout 
 }) => {
   return (
     <header className="bg-white border-b border-slate-200 sticky top-0 z-30">
@@ -41,6 +43,13 @@ const Header: React.FC<HeaderProps> = ({
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
+        </div>
+
+        {/* Desktop About Link */}
+        <div className="hidden md:flex items-center ml-4">
+          <a onClick={goToAbout} className="text-slate-500 hover:text-blue-600 font-medium cursor-pointer transition-colors">
+            About Project
+          </a>
         </div>
 
         <button 

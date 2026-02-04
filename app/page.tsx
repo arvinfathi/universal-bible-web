@@ -6,13 +6,14 @@ import Header from '../components/Header';
 import LanguageSelector from '../components/LanguageSelector';
 import VersionSelector from '../components/VersionSelector';
 import MobileMenu from '../components/MobileMenu';
+import AboutPage from '../components/AboutPage';
 import { BIBLE_INDEX, BibleLanguage, BibleVersion } from '../data/bibleIndex';
 
 const PDFReader = dynamic(() => import('../components/PDFReader'), { ssr: false });
 
 const App = () => {
   // State
-  const [view, setView] = useState<'home' | 'versions' | 'reader'>('home');
+  const [view, setView] = useState<'home' | 'versions' | 'reader' | 'about'>('home');
   const [selectedLang, setSelectedLang] = useState<BibleLanguage | null>(null);
   const [selectedVersion, setSelectedVersion] = useState<BibleVersion | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
@@ -64,6 +65,8 @@ const App = () => {
     } else if (view === 'versions') {
       setView('home');
       setSelectedLang(null);
+    } else if (view === 'about') {
+      setView('home');
     }
   };
 
@@ -72,6 +75,11 @@ const App = () => {
     setSelectedLang(null);
     setSelectedVersion(null);
     setSearchQuery('');
+    setSidebarOpen(false);
+  };
+
+  const goToAbout = () => {
+    setView('about');
     setSidebarOpen(false);
   };
 
@@ -89,11 +97,12 @@ const App = () => {
           isSidebarOpen={isSidebarOpen}
           setSidebarOpen={setSidebarOpen}
           resetHome={resetHome}
+          goToAbout={goToAbout}
         />
       )}
 
       {/* MOBILE MENU */}
-      {isSidebarOpen && <MobileMenu resetHome={resetHome} />}
+      {isSidebarOpen && <MobileMenu resetHome={resetHome} goToAbout={goToAbout} />}
 
       {/* CONTENT AREA */}
       <main className="flex-1 flex flex-col relative overflow-y-auto">
@@ -107,6 +116,9 @@ const App = () => {
             clearSearch={() => setSearchQuery('')}
           />
         )}
+
+        {/* VIEW: ABOUT */}
+        {view === 'about' && <AboutPage />}
 
         {/* VIEW: VERSIONS (If multiple versions exist) */}
         {view === 'versions' && selectedLang && (
