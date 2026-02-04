@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import { ChevronLeft, ChevronRight, ZoomIn, ZoomOut, Search as SearchIcon, Loader2 } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ZoomIn, Loader2, RotateCcw } from 'lucide-react';
 import { BibleLanguage, BibleVersion } from '../data/bibleIndex';
 
 import 'react-pdf/dist/Page/AnnotationLayer.css';
@@ -55,12 +55,24 @@ const PDFReader: React.FC<PDFReaderProps> = ({ filename, selectedLang, selectedV
     setScale(prevScale => Math.min(Math.max(0.5, prevScale + delta), 3.0));
   };
 
+  const setScaleExact = (newScale: number) => {
+    setScale(Math.min(Math.max(0.5, newScale), 3.0));
+  };
+
+  const handleWheel = (e: React.WheelEvent) => {
+    if (e.ctrlKey || e.metaKey) {
+      e.preventDefault();
+      const delta = e.deltaY > 0 ? -0.1 : 0.1;
+      changeScale(delta);
+    }
+  };
+
   // Build the correct URL for the PDF
   // Use the local proxy to avoid CORS issues with GitHub Releases
   const pdfUrl = `/api/pdf?url=${encodeURIComponent(filename)}`;
 
   return (
-    <div className="flex flex-col h-full bg-slate-100">
+    <div className="flex flex-col h-[100dvh] bg-slate-100">
       {/* TOOLBAR */}
       <div className="bg-white border-b border-gray-200 p-2 sm:p-4 flex justify-between items-center shadow-sm z-10 sticky top-0">
         <button 
@@ -73,13 +85,43 @@ const PDFReader: React.FC<PDFReaderProps> = ({ filename, selectedLang, selectedV
 
         <div className="flex items-center gap-2 sm:gap-4 overflow-x-auto no-scrollbar">
            {/* Zoom Controls */}
-           <div className="flex items-center bg-slate-50 rounded-lg p-1 border border-slate-200">
-            <button onClick={() => changeScale(-0.1)} className="p-1 hover:bg-slate-200 rounded text-slate-600" title="Zoom Out">
-              <ZoomOut size={18} />
-            </button>
-            <span className="text-xs font-mono w-12 text-center">{Math.round(scale * 100)}%</span>
-            <button onClick={() => changeScale(0.1)} className="p-1 hover:bg-slate-200 rounded text-slate-600" title="Zoom In">
-              <ZoomIn size={18} />
+           <div className="flex items-center bg-slate-50 rounded-lg p-1 border border-slate-200 gap-2">
+             <div className="flex items-center bg-white border border-slate-300 rounded overflow-hidden">
+               <div className="bg-slate-100 p-1 border-r border-slate-300 text-slate-500">
+                 <ZoomIn size={14} />
+               </div>
+               <input
+                 type="number"
+                 min={50}
+                 max={300}
+                 value={Math.round(scale * 100)}
+                 onChange={(e) => {
+                   const val = parseInt(e.target.value);
+                   if (!isNaN(val)) {
+                     setScaleExact(val / 100);
+                   }
+                 }}
+                 className="w-12 h-6 text-xs text-center border-none focus:ring-0 p-0"
+                 title="Zoom %"
+               />
+             </div>
+             <input
+               type="range"
+               min="0.5"
+               max="3.0"
+               step="0.1"
+               value={scale}
+               onChange={(e) => setScaleExact(parseFloat(e.target.value))}
+               className="w-24 sm:w-32 h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-600 hidden md:block"
+               title={`Zoom: ${Math.round(scale * 100)}%`}
+             />
+             <div className="w-px h-4 bg-slate-300 hidden md:block"></div>
+            <button 
+              onClick={() => setScaleExact(1.0)} 
+              className="p-1 hover:bg-slate-200 rounded text-slate-600" 
+              title="Reset Zoom"
+            >
+              <RotateCcw size={14} />
             </button>
           </div>
 
@@ -112,10 +154,10 @@ const PDFReader: React.FC<PDFReaderProps> = ({ filename, selectedLang, selectedV
                 max={numPages}
                 defaultValue={pageNumber}
                 key={pageNumber} // Key ensures input updates when external pageNumber changes
-                className="w-12 text-center text-xs font-mono bg-transparent border-none focus:ring-1 focus:ring-blue-500 rounded px-0 py-1"
+                className="w-10 text-center text-xs font-mono bg-transparent border-none focus:ring-1 focus:ring-blue-500 rounded px-0 py-1"
                 onFocus={(e) => e.target.select()}
               />
-              <span className="text-xs font-mono text-slate-400 mr-2">
+              <span className="w-9 text-xs font-mono text-slate-400 mr-2">
                 / {numPages || '--'}
               </span>
             </form>
@@ -134,7 +176,11 @@ const PDFReader: React.FC<PDFReaderProps> = ({ filename, selectedLang, selectedV
       </div>
 
       {/* DOCUMENT VIEW */}
-      <div className="flex-1 relative overflow-auto flex justify-center p-4 sm:p-8" id="pdf-container">
+      <div 
+        className="flex-1 relative overflow-auto flex p-4 sm:p-8" 
+        id="pdf-container"
+        onWheel={handleWheel}
+      >
         <Document
           file={pdfUrl}
           onLoadSuccess={onDocumentLoadSuccess}
@@ -150,7 +196,7 @@ const PDFReader: React.FC<PDFReaderProps> = ({ filename, selectedLang, selectedV
               <p className="text-xs mt-2 text-slate-500">Check if file exists at {pdfUrl}</p>
             </div>
           }
-          className="shadow-2xl"
+          className="shadow-2xl m-auto"
         >
           <Page 
             pageNumber={pageNumber} 
