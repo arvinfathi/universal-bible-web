@@ -3,6 +3,7 @@
 import React from 'react';
 import { ArrowRight, Globe } from 'lucide-react';
 import { BibleLanguage } from '../data/bibleIndex';
+import { HOME_TRANSLATIONS } from '../data/homeTranslations';
 
 interface LanguageSelectorProps {
   languages: BibleLanguage[];
@@ -12,15 +13,38 @@ interface LanguageSelectorProps {
 }
 
 const LanguageSelector: React.FC<LanguageSelectorProps> = ({ languages, onSelect, searchQuery, clearSearch }) => {
+  const [currentIndex, setCurrentIndex] = React.useState(0);
+  const [fade, setFade] = React.useState(true);
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+        setCurrentIndex((prev) => (prev + 1) % HOME_TRANSLATIONS.length);
+        setFade(true);
+      }, 500); // Wait for fade out
+    }, 5000); // Change every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const currentTranslation = HOME_TRANSLATIONS[currentIndex];
+
   return (
     <div className="max-w-5xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-      <div className="text-center mb-10 sm:mb-16">
-        <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mb-4">
-          The Word, in your language.
+      <div 
+        className="text-center mb-10 sm:mb-16 min-h-[280px] sm:min-h-[160px] flex flex-col justify-center items-center"
+        dir={currentTranslation.dir || 'ltr'}
+      >
+        <h2 
+          className={`text-3xl sm:text-4xl font-serif font-bold text-slate-900 mb-4 transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
+        >
+          {currentTranslation.title}
         </h2>
-        <p className="text-slate-600 max-w-2xl mx-auto">
-          Access the complete collection of Bibles instantly. 
-          Select a language to begin reading. No login or downloads required.
+        <p 
+          className={`text-slate-600 max-w-2xl mx-auto transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
+        >
+          {currentTranslation.subtitle}
         </p>
       </div>
 
