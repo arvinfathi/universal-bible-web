@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 align="center">UniversalBible</h1>
+  <h1 align="center" >📖 UniversalBible</h1>
 
   <p align="center">
     The Word, in your language. Instant access to Bibles without barriers.
@@ -22,7 +22,7 @@
 
 ---
 
-# 📖 UniversalBible
+## 📖 UniversalBible
 
 **UniversalBible** is a modern, web-based Bible reader designed to connect people with the Bible in their own language. It provides instant access to scripture with a focus on simplicity, speed, and accessibility.
 
