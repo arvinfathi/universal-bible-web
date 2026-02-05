@@ -22,8 +22,8 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ languages, onSelect
       setTimeout(() => {
         setCurrentIndex((prev) => (prev + 1) % HOME_TRANSLATIONS.length);
         setFade(true);
-      }, 500); // Wait for fade out
-    }, 5000); // Change every 5 seconds
+      }, 500);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);

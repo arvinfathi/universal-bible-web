@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = ({
           </h1>
         </div>
 
-        {/* Desktop Search */}
+
         <div className="hidden md:flex flex-1 max-w-md mx-8 relative">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400" size={18} />
           <input
@@ -45,7 +45,7 @@ const Header: React.FC<HeaderProps> = ({
           />
         </div>
 
-        {/* Desktop About Link */}
+
         <div className="hidden md:flex items-center ml-4">
           <a onClick={goToAbout} className="text-slate-500 hover:text-blue-600 font-medium cursor-pointer transition-colors">
             About Project
@@ -60,7 +60,7 @@ const Header: React.FC<HeaderProps> = ({
         </button>
       </div>
       
-      {/* Mobile Search Bar (only shows if menu closed) */}
+
       {!isSidebarOpen && (
          <div className="md:hidden px-4 py-3 border-t border-slate-100 bg-slate-50">
            <div className="relative">

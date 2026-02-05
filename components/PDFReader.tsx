@@ -8,7 +8,7 @@ import { BibleLanguage, BibleVersion } from '../data/bibleIndex';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 
-// Configure PDF.js worker
+
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.mjs',
   import.meta.url,
@@ -33,7 +33,7 @@ const PDFReader: React.FC<PDFReaderProps> = ({ filename, selectedLang, selectedV
   const [scale, setScale] = useState<number>(1.0);
   const [loading, setLoading] = useState<boolean>(true);
 
-  // When filename changes, reset
+
   useEffect(() => {
     setPageNumber(1);
     setLoading(true);
@@ -67,13 +67,10 @@ const PDFReader: React.FC<PDFReaderProps> = ({ filename, selectedLang, selectedV
     }
   };
 
-  // Build the correct URL for the PDF
-  // Use the local proxy to avoid CORS issues with GitHub Releases
   const pdfUrl = `/api/pdf?url=${encodeURIComponent(filename)}`;
 
   return (
     <div className="flex flex-col h-[100dvh] bg-slate-100">
-      {/* TOOLBAR */}
       <div className="bg-white border-b border-gray-200 p-2 sm:p-4 flex justify-between items-center shadow-sm z-10 sticky top-0">
         <button 
           onClick={onBack}
@@ -84,7 +81,6 @@ const PDFReader: React.FC<PDFReaderProps> = ({ filename, selectedLang, selectedV
         </button>
 
         <div className="flex items-center gap-2 sm:gap-4 overflow-x-auto no-scrollbar">
-           {/* Zoom Controls */}
            <div className="flex items-center bg-slate-50 rounded-lg p-1 border border-slate-200 gap-2">
              <div className="flex items-center bg-white border border-slate-300 rounded overflow-hidden">
                <div className="bg-slate-100 p-1 border-r border-slate-300 text-slate-500">
@@ -125,7 +121,6 @@ const PDFReader: React.FC<PDFReaderProps> = ({ filename, selectedLang, selectedV
             </button>
           </div>
 
-          {/* Pagination */}
           <div className="flex items-center bg-slate-50 rounded-lg p-1 border border-slate-200">
             <button 
               onClick={() => changePage(-1)} 
@@ -153,7 +148,7 @@ const PDFReader: React.FC<PDFReaderProps> = ({ filename, selectedLang, selectedV
                 min={1}
                 max={numPages}
                 defaultValue={pageNumber}
-                key={pageNumber} // Key ensures input updates when external pageNumber changes
+                key={pageNumber}
                 className="w-10 text-center text-xs font-mono bg-transparent border-none focus:ring-1 focus:ring-blue-500 rounded px-0 py-1"
                 onFocus={(e) => e.target.select()}
               />
@@ -172,10 +167,10 @@ const PDFReader: React.FC<PDFReaderProps> = ({ filename, selectedLang, selectedV
           </div>
         </div>
 
-        <div className="hidden sm:block w-24"></div> {/* Spacer */}
+        <div className="hidden sm:block w-24"></div>
       </div>
 
-      {/* DOCUMENT VIEW */}
+
       <div 
         className="flex-1 relative overflow-auto flex p-4 sm:p-8" 
         id="pdf-container"
@@ -208,7 +203,7 @@ const PDFReader: React.FC<PDFReaderProps> = ({ filename, selectedLang, selectedV
         </Document>
       </div>
 
-      {/* Floating Page Number for Mobile */}
+
       <div className="sm:hidden absolute bottom-6 right-6 bg-black/70 text-white px-3 py-1 rounded-full text-xs backdrop-blur-sm z-20">
         Page {pageNumber}
       </div>

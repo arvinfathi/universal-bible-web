@@ -53,8 +53,6 @@ const App = () => {
 
   const handleBack = () => {
     if (view === 'reader') {
-      // If we have a selected language and it has more than one version, go back to versions list
-      // Otherwise go back to home
       if (selectedLang && selectedLang.versions.length > 1) {
         setView('versions');
       } else {
@@ -83,13 +81,10 @@ const App = () => {
     setSidebarOpen(false);
   };
 
-  /**
-   * MAIN RENDER
-   */
+
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 flex flex-col overflow-hidden">
       
-      {/* HEADER */}
       {view !== 'reader' && (
         <Header 
           searchQuery={searchQuery}
@@ -101,13 +96,10 @@ const App = () => {
         />
       )}
 
-      {/* MOBILE MENU */}
       {isSidebarOpen && <MobileMenu resetHome={resetHome} goToAbout={goToAbout} />}
 
-      {/* CONTENT AREA */}
       <main className="flex-1 flex flex-col relative overflow-y-auto">
         
-        {/* VIEW: HOME (Language Selection) */}
         {view === 'home' && (
           <LanguageSelector 
             languages={filteredLanguages} 
@@ -117,10 +109,8 @@ const App = () => {
           />
         )}
 
-        {/* VIEW: ABOUT */}
         {view === 'about' && <AboutPage />}
 
-        {/* VIEW: VERSIONS (If multiple versions exist) */}
         {view === 'versions' && selectedLang && (
           <VersionSelector 
             selectedLang={selectedLang}
@@ -129,7 +119,6 @@ const App = () => {
           />
         )}
 
-        {/* VIEW: READER (PDF Viewer) */}
         {view === 'reader' && selectedVersion && (
           <PDFReader 
             filename={selectedVersion.filename} 
@@ -140,7 +129,6 @@ const App = () => {
         )}
       </main>
 
-      {/* FOOTER */}
       {view !== 'reader' && (
         <footer className="bg-white border-t border-slate-200 py-8 mt-auto">
           <div className="max-w-5xl mx-auto px-4 text-center">
