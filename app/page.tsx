@@ -109,7 +109,7 @@ const App = () => {
           />
         )}
 
-        {view === 'about' && <AboutPage />}
+        {view === 'about' && <AboutPage onBack={handleBack} />}
 
         {view === 'versions' && selectedLang && (
           <VersionSelector 

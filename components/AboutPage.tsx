@@ -1,13 +1,25 @@
 'use client';
 
 import React from 'react';
+import { ChevronLeft } from 'lucide-react';
 import { BIBLE_INDEX } from '../data/bibleIndex';
 
 const languageCount = BIBLE_INDEX.length;
 
-const AboutPage: React.FC = () => {
+interface AboutPageProps {
+  onBack: () => void;
+}
+
+const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+      <button
+        onClick={onBack}
+        className="mb-6 flex items-center text-sm font-medium text-slate-500 hover:text-slate-800 transition-colors"
+      >
+        <ChevronLeft size={16} className="mr-1" /> Back
+      </button>
+
       <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 sm:p-12">
         <h1 className="text-3xl font-serif font-bold text-slate-900 mb-6">About Project</h1>
         
