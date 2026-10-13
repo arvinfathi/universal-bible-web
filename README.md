@@ -34,7 +34,23 @@
 *   **Multi-Language Support**: Access Bibles in various languages including English, Spanish, French, German, Chinese, Arabic, Farsi, and more.
 *   **RTL Support**: Full support for right-to-left languages like Arabic, Farsi, and Hebrew.
 *   **Clean Reading Experience**: Distraction-free interface with adjustable text size and zoom.
+*   **Full-Text Search**: Search an entire Bible, with every match highlighted and quick next/previous navigation.
 *   **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
+
+## 🧰 Tech Stack
+
+| Tool | Version |
+| --- | --- |
+| [Node.js](https://nodejs.org/) | 24 LTS |
+| [npm](https://www.npmjs.com/) | 11 |
+| [Next.js](https://nextjs.org/) | 16.4 |
+| [React](https://react.dev/) | 19.3 |
+| [TypeScript](https://www.typescriptlang.org/) | 6.0 |
+| [Tailwind CSS](https://tailwindcss.com/) | 4.3 |
+| [PDF.js](https://mozilla.github.io/pdf.js/) (`pdfjs-dist`) | 6.4 |
+| [Lucide](https://lucide.dev/) (`lucide-react`) | 1.x |
+
+The reader uses the modern build of PDF.js, which requires an up-to-date browser (current Chrome, Edge, Firefox or Safari).
 
 ## 📂 Project Structure
 
@@ -51,8 +67,10 @@ universal-bible-web/
 
 ### Prerequisites
 
-*   Node.js 18+ installed on your machine
-*   npm, yarn, pnpm, or bun
+*   [Node.js](https://nodejs.org/) 24 LTS or newer (the repo includes an `.nvmrc`, so `nvm use` picks the right version)
+*   npm 11 or newer (bundled with Node.js 24)
+
+> Use npm rather than yarn, pnpm or bun: the project relies on npm's `package-lock.json` and the `overrides` field in `package.json`.
 
 ### Installation
 
@@ -67,21 +85,15 @@ cd universal-bible-web
 
 ```bash
 npm install
-# or
-yarn install
-# or
-pnpm install
 ```
 
 3.  **Run the development server**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
+
+To try a production build locally, run `npm run build` first and then `npm run start`. `npm run start` only serves the last build, so rebuild after pulling changes.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

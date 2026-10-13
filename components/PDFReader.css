@@ -1,0 +1,22 @@
+/* Overrides for pdfjs-dist/web/pdf_viewer.css. Must be imported after it. */
+
+/* pdf_viewer.css sets `color-scheme: light dark` on :root, which would turn native
+   controls dark across the whole app in dark mode. The app UI is light-only. */
+:root {
+  color-scheme: light;
+}
+
+.pdfViewer {
+  padding: 1.5rem 0;
+}
+
+.pdfViewer.removePageBorders .page {
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 10px 25px -5px rgb(15 23 42 / 0.15), 0 4px 10px -6px rgb(15 23 42 / 0.1);
+}
+
+/* Search matches: every match in yellow, the current one in orange. */
+.textLayer .highlight {
+  --highlight-bg-color: rgb(250 204 21 / 0.45);
+  --highlight-selected-bg-color: rgb(249 115 22 / 0.6);
+}

@@ -1,6 +1,9 @@
 'use client';
 
 import React from 'react';
+import { BIBLE_INDEX } from '../data/bibleIndex';
+
+const languageCount = BIBLE_INDEX.length;
 
 const AboutPage: React.FC = () => {
   return (
@@ -12,10 +15,11 @@ const AboutPage: React.FC = () => {
           <p className="text-lg leading-relaxed">
             <strong className="text-slate-900">UniversalBible</strong> is designed to connect people with the Word of God in their heart language. 
             We believe that scripture should be accessible to everyone, instantly, without any barriers.
+            Today, UniversalBible offers the Bible in <strong className="text-slate-900 whitespace-nowrap">{languageCount} languages</strong>.
           </p>
 
           <p className="border-l-4 border-blue-500 pl-4 italic bg-slate-50 py-2 rounded-r-lg">
-            "The Word, in your language."
+            &quot;The Word, in your language.&quot;
           </p>
 
           <h2 className="text-xl font-bold text-slate-900 mt-8 mb-4">Our Mission</h2>

@@ -23,7 +23,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ languages, onSelect
         setCurrentIndex((prev) => (prev + 1) % HOME_TRANSLATIONS.length);
         setFade(true);
       }, 500);
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -51,7 +51,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ languages, onSelect
       {languages.length === 0 ? (
         <div className="text-center py-20 text-slate-400">
           <Globe className="mx-auto mb-4 opacity-50" size={48} />
-          <p>No languages found matching "{searchQuery}"</p>
+          <p>No languages found matching &quot;{searchQuery}&quot;</p>
           <button 
             onClick={clearSearch}
             className="mt-4 text-blue-600 hover:underline"

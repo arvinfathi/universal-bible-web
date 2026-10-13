@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 
 const BIBLES_DIR = path.join(process.cwd(), 'public/bibles');
-const OUTPUT_FILE = path.join(process.cwd(), 'data/bibleIndex.json');
 
 const LANGUAGE_NAMES: Record<string, string> = {
     'AF': 'Afrikaans',
