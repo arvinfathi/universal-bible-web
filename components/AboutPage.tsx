@@ -45,6 +45,11 @@ const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
             The Bible texts rendered in this application are sourced from the open-source <a href="https://biblesupersearch.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">Bible SuperSearch</a> data repository. 
             We are grateful for their work in digitizing and making these texts available.
           </p>
+
+          <h2 className="text-xl font-bold text-slate-900 mt-8 mb-4">Created By</h2>
+          <p>
+            UniversalBible was created by <strong className="text-slate-900">Arvin Fathi</strong>.
+          </p>
         </div>
       </div>
     </div>
